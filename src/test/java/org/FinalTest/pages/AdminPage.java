@@ -23,13 +23,14 @@ public class AdminPage {
         DriverUntils.waitUntil(ExpectedConditions.visibilityOfElementLocated(btnAddButton));
         DriverUntils.findElement(btnAddButton).click();
     }
+
     public void addNewUser() {
         DriverUntils.waitUntil(ExpectedConditions.visibilityOfElementLocated(btnAddButton));
         DriverUntils.findElement(btnAddButton).click();
         DriverUntils.waitUntil(ExpectedConditions.visibilityOfElementLocated(optionUserRole));
         DriverUntils.findElement(optionUserRole).click();
         new Actions(DriverUntils.getDriver())
-                .moveToElement(DriverUntils.findElement(optionUserRole),-50,50).click().perform();
+                .moveToElement(DriverUntils.findElement(optionUserRole), -50, 50).click().perform();
         DriverUntils.findElement(optionStatus).click();
         new Actions(DriverUntils.getDriver())
                 .moveByOffset(20, 20).click().perform();
@@ -58,10 +59,5 @@ public class AdminPage {
 //        System.out.println("ValueY: " + ycord);
 
 
-
-
-
-
-        
     }
 }

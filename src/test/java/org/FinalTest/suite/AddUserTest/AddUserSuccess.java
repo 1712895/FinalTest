@@ -28,10 +28,10 @@ public class AddUserSuccess {
         loginPage = new LoginPage();
     }
 
-//    @AfterMethod
-//    public void AfterMethod() {
-//        DriverUntils.quit();
-//    }
+    @AfterMethod
+    public void AfterMethod() {
+        DriverUntils.quit();
+    }
 
     @Test
     public void LoginSuccess() {
@@ -41,9 +41,7 @@ public class AddUserSuccess {
 //        String name = homePage.getUserName();
 //        Assert.assertEquals(name,"manda user","Ten hien thi: " );
         HomePage homePage = new HomePage();
-        homePage.goToAdminPage();
-        AdminPage adminPage = new AdminPage();
-        adminPage.addNewUser();
+        homePage.goToPIMPage();
 
 
 
