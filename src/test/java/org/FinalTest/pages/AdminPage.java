@@ -50,9 +50,6 @@ public class AdminPage {
         DriverUntils.findElement(btnSave).click();
 
 
-
-
-
 //        WebElement ele= DriverUntils.findElement(txtEmployeeName);
 //        Point point = ele.getLocation();
 //        int xcord = point.getX();
