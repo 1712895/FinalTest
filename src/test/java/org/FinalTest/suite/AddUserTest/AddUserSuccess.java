@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 public class AddUserSuccess {
 
     LoginPage loginPage;
-    
+
 
     @BeforeMethod
     public void BeforeMethod() {
@@ -37,14 +37,10 @@ public class AddUserSuccess {
     public void LoginSuccess() {
         loginPage.login("Admin", "admin123");
 
-//        HomePage homePage = new HomePage();
-//        String name = homePage.getUserName();
-//        Assert.assertEquals(name,"manda user","Ten hien thi: " );
         HomePage homePage = new HomePage();
-        homePage.goToPIMPage();
-
-
-
+        homePage.goToAdminPage();
+        AdminPage adminPage = new AdminPage();
+        adminPage.addNewUser();
 
 
     }

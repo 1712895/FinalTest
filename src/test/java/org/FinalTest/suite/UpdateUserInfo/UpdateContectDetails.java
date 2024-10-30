@@ -35,8 +35,6 @@ public class UpdateContectDetails {
         loginPage.login("Admin", "admin123");
 
         HomePage homePage = new HomePage();
-        homePage.goToAdminPage();
-        AdminPage adminPage = new AdminPage();
-        adminPage.addNewUser();
+        homePage.goToPIMPage();
     }
 }
